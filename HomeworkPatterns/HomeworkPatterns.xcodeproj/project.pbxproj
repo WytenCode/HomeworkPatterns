@@ -14,7 +14,14 @@
 		E753E50F2282DA7900FB5FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E753E50E2282DA7900FB5FDC /* Assets.xcassets */; };
 		E753E5122282DA7900FB5FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E753E5102282DA7900FB5FDC /* LaunchScreen.storyboard */; };
 		E753E5152282DA7900FB5FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5142282DA7900FB5FDC /* main.m */; };
-		E753E51E2282DB1600FB5FDC /* StreetMan.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E51D2282DB1600FB5FDC /* StreetMan.m */; };
+		E753E5212282F8DA00FB5FDC /* EnglishMan.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5202282F8DA00FB5FDC /* EnglishMan.m */; };
+		E753E5242282FB4A00FB5FDC /* FrenchMan.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5232282FB4A00FB5FDC /* FrenchMan.m */; };
+		E753E5272282FBB100FB5FDC /* GermanMan.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5262282FBB100FB5FDC /* GermanMan.m */; };
+		E753E52A2282FBF100FB5FDC /* SpanishMan.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5292282FBF100FB5FDC /* SpanishMan.m */; };
+		E753E52F2282FCE900FB5FDC /* EnglishManFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E52E2282FCE900FB5FDC /* EnglishManFactory.m */; };
+		E753E5322282FD5500FB5FDC /* FrenchManFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5312282FD5500FB5FDC /* FrenchManFactory.m */; };
+		E753E5352282FDA200FB5FDC /* GermanManFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5342282FDA200FB5FDC /* GermanManFactory.m */; };
+		E753E5382282FDE000FB5FDC /* SpanishManFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E753E5372282FDE000FB5FDC /* SpanishManFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +37,23 @@
 		E753E5132282DA7900FB5FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E753E5142282DA7900FB5FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E753E51C2282DB1600FB5FDC /* StreetMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreetMan.h; sourceTree = "<group>"; };
-		E753E51D2282DB1600FB5FDC /* StreetMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetMan.m; sourceTree = "<group>"; };
+		E753E51F2282F8DA00FB5FDC /* EnglishMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnglishMan.h; sourceTree = "<group>"; };
+		E753E5202282F8DA00FB5FDC /* EnglishMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishMan.m; sourceTree = "<group>"; };
+		E753E5222282FB4A00FB5FDC /* FrenchMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrenchMan.h; sourceTree = "<group>"; };
+		E753E5232282FB4A00FB5FDC /* FrenchMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrenchMan.m; sourceTree = "<group>"; };
+		E753E5252282FBB100FB5FDC /* GermanMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GermanMan.h; sourceTree = "<group>"; };
+		E753E5262282FBB100FB5FDC /* GermanMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GermanMan.m; sourceTree = "<group>"; };
+		E753E5282282FBF100FB5FDC /* SpanishMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanishMan.h; sourceTree = "<group>"; };
+		E753E5292282FBF100FB5FDC /* SpanishMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpanishMan.m; sourceTree = "<group>"; };
+		E753E52C2282FC6B00FB5FDC /* StreetManFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreetManFactory.h; sourceTree = "<group>"; };
+		E753E52D2282FCE900FB5FDC /* EnglishManFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnglishManFactory.h; sourceTree = "<group>"; };
+		E753E52E2282FCE900FB5FDC /* EnglishManFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishManFactory.m; sourceTree = "<group>"; };
+		E753E5302282FD5500FB5FDC /* FrenchManFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrenchManFactory.h; sourceTree = "<group>"; };
+		E753E5312282FD5500FB5FDC /* FrenchManFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrenchManFactory.m; sourceTree = "<group>"; };
+		E753E5332282FDA200FB5FDC /* GermanManFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GermanManFactory.h; sourceTree = "<group>"; };
+		E753E5342282FDA200FB5FDC /* GermanManFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GermanManFactory.m; sourceTree = "<group>"; };
+		E753E5362282FDE000FB5FDC /* SpanishManFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanishManFactory.h; sourceTree = "<group>"; };
+		E753E5372282FDE000FB5FDC /* SpanishManFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpanishManFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 		E753E4F62282DA7700FB5FDC = {
 			isa = PBXGroup;
 			children = (
+				E753E52B2282FC4900FB5FDC /* Factories */,
 				E753E51B2282DAFC00FB5FDC /* Models */,
 				E753E5012282DA7700FB5FDC /* HomeworkPatterns */,
 				E753E5002282DA7700FB5FDC /* Products */,
@@ -82,9 +106,32 @@
 			isa = PBXGroup;
 			children = (
 				E753E51C2282DB1600FB5FDC /* StreetMan.h */,
-				E753E51D2282DB1600FB5FDC /* StreetMan.m */,
+				E753E51F2282F8DA00FB5FDC /* EnglishMan.h */,
+				E753E5202282F8DA00FB5FDC /* EnglishMan.m */,
+				E753E5222282FB4A00FB5FDC /* FrenchMan.h */,
+				E753E5232282FB4A00FB5FDC /* FrenchMan.m */,
+				E753E5252282FBB100FB5FDC /* GermanMan.h */,
+				E753E5262282FBB100FB5FDC /* GermanMan.m */,
+				E753E5282282FBF100FB5FDC /* SpanishMan.h */,
+				E753E5292282FBF100FB5FDC /* SpanishMan.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E753E52B2282FC4900FB5FDC /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E753E52C2282FC6B00FB5FDC /* StreetManFactory.h */,
+				E753E52D2282FCE900FB5FDC /* EnglishManFactory.h */,
+				E753E52E2282FCE900FB5FDC /* EnglishManFactory.m */,
+				E753E5302282FD5500FB5FDC /* FrenchManFactory.h */,
+				E753E5312282FD5500FB5FDC /* FrenchManFactory.m */,
+				E753E5332282FDA200FB5FDC /* GermanManFactory.h */,
+				E753E5342282FDA200FB5FDC /* GermanManFactory.m */,
+				E753E5362282FDE000FB5FDC /* SpanishManFactory.h */,
+				E753E5372282FDE000FB5FDC /* SpanishManFactory.m */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E753E52A2282FBF100FB5FDC /* SpanishMan.m in Sources */,
+				E753E5322282FD5500FB5FDC /* FrenchManFactory.m in Sources */,
 				E753E50D2282DA7700FB5FDC /* HomeworkPatterns.xcdatamodeld in Sources */,
-				E753E51E2282DB1600FB5FDC /* StreetMan.m in Sources */,
+				E753E52F2282FCE900FB5FDC /* EnglishManFactory.m in Sources */,
+				E753E5212282F8DA00FB5FDC /* EnglishMan.m in Sources */,
 				E753E5072282DA7700FB5FDC /* ViewController.m in Sources */,
+				E753E5352282FDA200FB5FDC /* GermanManFactory.m in Sources */,
+				E753E5272282FBB100FB5FDC /* GermanMan.m in Sources */,
 				E753E5152282DA7900FB5FDC /* main.m in Sources */,
+				E753E5382282FDE000FB5FDC /* SpanishManFactory.m in Sources */,
+				E753E5242282FB4A00FB5FDC /* FrenchMan.m in Sources */,
 				E753E5042282DA7700FB5FDC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
