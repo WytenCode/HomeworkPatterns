@@ -16,6 +16,9 @@
 
 @property (nonatomic, strong) id<StreetManFactory> currentFactory;
 @property (nonatomic, strong) id<StreetPerson> ourPerson;
+@property (nonatomic, strong) id<StreetCat> ourCat;
+@property (nonatomic, strong) id<StreetDog> ourDog;
+
 
 @end
 
@@ -38,28 +41,26 @@
         return;
     }
     NSLog(@"Man created : %@", [_ourPerson class]);
-    ///////////////////////////////////////////////////////////////
     NSLog(@"%@", [_ourPerson giveGreeting]);
-    NSLog(@"Let's meet the man with the same age and the same nation as we are!");
-    
-    id<StreetPerson> nextMan = nil;
-    NSInteger manCount = 1;
-    _currentFactory = nil;
-    _currentFactory = [self giveFactory];
-    nextMan = [_currentFactory createPerson];
-    NSLog(@"%@", [nextMan giveGreeting]);
-    while (([nextMan tellAge] != [_ourPerson tellAge]) || ([nextMan class] != [_ourPerson class]))
+    NSLog(@"This man is %ld years old", [_ourPerson tellAge]);
+    ///////////////////////////////////////////////////////////////
+    _ourCat = [_currentFactory createCat];
+    if (!_ourCat)
     {
-        nextMan = nil;
-        _currentFactory = nil;
-        _currentFactory = [self giveFactory];
-        nextMan = [_currentFactory createPerson];
-        NSLog(@"%@", [nextMan giveGreeting]);
-        manCount++;
+        NSLog(@"Cat is not created");
+        return;
     }
-
-    NSLog(@"We found the man! His number is %ld, his age is %ld, he is %@", manCount, [nextMan tellAge], [nextMan class]);
-    
+    NSLog(@"Cat created : %@", [_ourCat class]);
+    NSLog(@"The сat mews like this: %@. And it is %@", [_ourCat sayLoudMeow], [_ourCat tellColour]);
+    ///////////////////////////////////////////////////////////////
+    _ourDog = [_currentFactory createDog];
+    if (!_ourDog)
+    {
+        NSLog(@"Dog is not created");
+        return;
+    }
+    NSLog(@"Dog created : %@", [_ourDog class]);
+    NSLog(@"The dog's name is %@, and it's breed is %@", [_ourDog tellDogName], [_ourDog tellDogBreed]);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -85,7 +86,4 @@
     }
     return tmpFactory;
 }
-
-
-
 @end

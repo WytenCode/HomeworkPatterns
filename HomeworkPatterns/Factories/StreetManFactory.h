@@ -10,10 +10,14 @@
 #define StreetManFactory_h
 
 #import "StreetMan.h"
+#import "StreetCat.h"
+#import "StreetDog.h"
 
 @protocol StreetManFactory <NSObject>
 
 -(id<StreetPerson>)createPerson;
+-(id<StreetCat>)createCat;
+-(id<StreetDog>)createDog;
 
 @end
 

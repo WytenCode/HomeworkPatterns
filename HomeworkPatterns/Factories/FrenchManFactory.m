@@ -8,12 +8,24 @@
 
 #import "FrenchManFactory.h"
 #import "FrenchMan.h"
+#import "FrenchCat.h"
+#import "FrenchDog.h"
 
 @implementation FrenchManFactory
 
 -(id<StreetPerson>)createPerson
 {
     return [[FrenchMan alloc] init];
+}
+
+-(id<StreetCat>)createCat
+{
+    return [[FrenchCat alloc] init];
+}
+
+-(id<StreetDog>)createDog
+{
+    return [[FrenchDog alloc] init];
 }
 
 @end
